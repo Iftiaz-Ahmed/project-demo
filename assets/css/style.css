@@ -1,0 +1,193 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+body{
+	background: #e9ecef3d;
+}
+
+header{
+  position: fixed;
+  top: 50;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+	
+}
+
+ /*The progress container (grey background)*/ 
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 98px;
+    background: #d1450a;
+    width: 0%;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 7px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+header img {
+	width: 150px;
+	margin-left: 100px;
+
+}
+
+.container-fluid{
+	padding: 0;
+
+
+}
+
+.shadow-lg {
+	color: white;
+	text-align: center;
+	transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+}
+
+.shadow-lg:hover {
+	text-decoration: underline;
+	color: #d7730b;
+}
+
+.mb-5, .my-5 {
+    margin-bottom: 2rem !important;
+}
+
+.container{
+	margin-bottom: 30px !important; 
+}
+
+.card{
+	margin-bottom: 25px;
+}
+
+
+.btn-primary{
+	background-color: #d1450a;
+    border-color: #d1450a;
+}
+
+.btn-primary:hover{
+	background-color: #d1450ac7;
+    border-color: #d1450ac7;
+}
+
+.t{
+	color: #d65f0a;
+}
+
+.zoom {
+  
+  transition: transform .2s; /* Animation */
+  width: 280px;
+  height: 285px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(2.5); /* (250% zoom  */
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #d95c0b;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+/*For glowing effect text*/
+.glow {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d94e0a, 0 0 40px #d94e0a, 0 0 50px #d94e0a, 0 0 60px #d94e0a, 0 0 70px #d94e0a;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #d1450a, 0 0 40px #d1450a, 0 0 50px #d1450a, 0 0 60px #d1450a, 0 0 70px #d1450a, 0 0 80px #d1450a;
+  }
+}
+
+.top-social{
+	padding: 20px;
+}
+
+.list-inline-item a{
+    color: #ffffff !important;
+}
+
+.list-inline-item a:hover{
+    color: blue !important;
+
+}
+
+.footer {
+  width: 100%;
+  background-color: #212529;
+  color: white;
+  text-align: center;
+}
